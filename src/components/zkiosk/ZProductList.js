@@ -19,7 +19,7 @@ const ZProductList = ({buyProduct , viewProduct}) => {
                 <li key={p.pno}>
                     {p.pname}
                     <button 
-                    className="bg-sb-gary2"
+                    className="bg-sb-gary2 border-2 border-black"
                     onClick={() => buyProduct({...p})}
                     >BUY</button>
                     </li>)}
