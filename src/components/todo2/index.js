@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TodoInput from "./TodoInput";
 import TodoList from "./TodoList";
+import TemplatePage from "../layout/TemplatePage";
 
 const Todo2 = () => {
 
@@ -20,8 +21,12 @@ const Todo2 = () => {
     return ( 
         <>
             <div>
+                <TemplatePage>
+
                 <TodoInput addTodo={addTodo}></TodoInput>
                 <TodoList arr={todo} deleteTodo={deleteTodo}></TodoList>
+                </TemplatePage>
+               
             </div>
         </>
     );
