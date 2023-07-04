@@ -24,14 +24,16 @@ const Todo2Input = ({changeView}) => {
             </div>
 
             <div>
-                <button onClick={() =>{ 
+                <button
+                className="m-2 p-2 w-20 bg-slate-700 text-white rounded-md" 
+                onClick={() =>{ 
                     postTodo(todo).then(newTodo => {
-                        alert("새로운 Todo: " + newTodo.tno)
-                        changeView("list")
+                    alert("새로운 Todo: " + newTodo.tno)
+                    changeView("list")
                     })
                 }}>
                         Register
-                    </button>
+                </button>
             </div>
         </div>
      );
